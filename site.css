@@ -50,7 +50,8 @@ h1,h2,h3,h4{font-family:var(--font-d);font-weight:600;line-height:1.18}
 header{position:sticky;top:0;z-index:50;background:rgba(234,247,243,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(15,61,70,.07)}
 .nav{max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:.8rem 1.1rem}
 .brand{display:flex;align-items:center;gap:.6rem}
-.brand-mark{width:40px;height:40px;border-radius:14px;background:linear-gradient(140deg,var(--teal),var(--teal-deep));display:grid;place-items:center;flex-shrink:0;box-shadow:0 6px 14px -6px rgba(13,107,102,.5)}
+.brand-mark{width:44px;height:44px;display:grid;place-items:center;flex-shrink:0}
+.brand-mark img{width:44px;height:44px;object-fit:contain;border-radius:50%}
 .brand-name{font-family:var(--font-d);font-weight:600;font-size:1.02rem;line-height:1.1}
 .brand-name small{display:block;font-family:var(--font-b);font-weight:700;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-deep)}
 .nav-links{display:none;gap:1.5rem;font-weight:700;font-size:.92rem}
@@ -203,11 +204,12 @@ footer{background:var(--ink);color:#9FC3C0;padding:2.6rem 1.2rem 2rem}
 .foot-base{border-top:1px solid rgba(255,255,255,.1);padding-top:1.2rem;font-size:.78rem;font-weight:600}
 
 /* ============ STICKY ACTION BAR ============ */
-.action-bar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:.5rem;padding:.6rem .7rem calc(.6rem + env(safe-area-inset-bottom));background:rgba(255,255,255,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid rgba(15,61,70,.08)}
+.action-bar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;padding:.6rem .7rem calc(.6rem + env(safe-area-inset-bottom));background:rgba(255,255,255,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid rgba(15,61,70,.08)}
 .ab{display:flex;align-items:center;justify-content:center;gap:.45rem;font-weight:800;font-size:.86rem;border-radius:16px;padding:.75rem .4rem}
 .ab-call{background:var(--mint-deep);color:var(--ink)}
 .ab-wa{background:#E7F8EC;color:#128C4B}
 .ab-book{background:var(--teal);color:#fff;box-shadow:0 10px 20px -8px rgba(23,142,136,.55)}
+.ab-ig{background:linear-gradient(45deg,#F58529,#DD2A7B 50%,#8134AF 90%);color:#fff;box-shadow:0 10px 20px -8px rgba(221,42,123,.5)}
 
 /* ============ DESKTOP ============ */
 @media (min-width:840px){
